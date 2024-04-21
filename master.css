@@ -145,3 +145,24 @@ footer a{
 footer a:hover{
     color: black;
 }
+
+
+/* FAQs styles */
+
+.qanda{
+    padding: 5px;
+    margin: 5px;
+}
+
+.qanda h1{
+    padding: 5px;
+    font-family: "ubuntu", sans-serif;
+    border-left: #ad4af0 5px solid;
+    font-size: 20px;
+}
+
+.qanda p{
+    padding: 5px;
+    font-family: "cairo", sans-serif;
+    font-size: 18px;
+}
