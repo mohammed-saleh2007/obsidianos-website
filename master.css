@@ -2,6 +2,8 @@ body{
     margin: 0;
 }
 
+
+/* navbar */
 nav{
     background-color: #8d00eb;
     list-style-type: none;
@@ -10,6 +12,8 @@ nav{
 nav a{
     text-decoration: none;
     color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 650;
     height: 100%;
     width: 100%;
     padding: 15px;
@@ -18,7 +22,66 @@ nav a{
 nav a:hover{
     background-color: #ad4af0;
 }
+nav a.active{
+    background-color: white;
+    color: black;
+    border-bottom: 5px black solid;
+}
 
-nav span{
-    float: right;
+nav a.active:hover{
+    color: #ad4af0;
+}
+
+/* title */
+
+.title{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title img{
+    width: 25%;
+}
+
+.title h1{
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt";
+    margin: 0;
+}
+
+.title h2{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+.about{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text{
+    width: 75%;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt";
+    margin: 0;
+}
+
+.about-img{
+    width: 25%;
+}
+
+.about-img img{
+    width: 75%;
 }
