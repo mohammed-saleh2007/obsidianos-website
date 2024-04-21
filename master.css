@@ -1,11 +1,16 @@
+* {
+    color: white;
+}
+
 body{
     margin: 0;
+    background-color: black;
 }
 
 
 /* navbar */
 nav{
-    background-color: #8d00eb;
+    background-color: #480177;
     list-style-type: none;
     padding: 15px;
 }
@@ -102,7 +107,7 @@ nav a.active:hover{
 }
 
 footer{
-    background-color: rgb(128, 126, 126);
+    background-color: rgb(75, 75, 75);
     color: white;
     font-family: "cairo", sans-serif;
     justify-content: center;
