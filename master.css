@@ -1,0 +1,32 @@
+nav{
+    background-color: #ae66df;
+    margin: auto;
+    padding: 5px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+
+.nav-links{
+    text-align: right;
+    padding: 5px;
+    width: 95%;
+    display: inline;
+    vertical-align: middle;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.logo{
+    width: 5%;
+}
+
+.logo img{
+    width: 50px;
+}
