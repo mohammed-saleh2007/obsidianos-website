@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: #8d00eb;
+    list-style-type: none;
+    padding: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+
+nav a:hover{
+    background-color: #ad4af0;
+}
+
+nav span{
+    float: right;
+}
