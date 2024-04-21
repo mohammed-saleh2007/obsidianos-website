@@ -11,8 +11,12 @@ body{
 /* navbar */
 nav{
     background-color: #480177;
+    opacity: 0.9;
+    /* filter: blur(5px); */
     list-style-type: none;
     padding: 15px;
+    position: sticky;
+    top: 0;
 }
 nav a{
     text-decoration: none;
@@ -22,6 +26,7 @@ nav a{
     height: 100%;
     width: 100%;
     padding: 15px;
+    opacity: 1;
 }
 
 nav a:hover{
@@ -30,7 +35,6 @@ nav a:hover{
 nav a.active{
     background-color: white;
     color: black;
-    border-bottom: 5px black solid;
 }
 
 nav a.active:hover{
