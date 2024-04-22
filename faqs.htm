@@ -19,13 +19,22 @@
     
     <nav>
         <a href="index.htm">Home</a>
-        <a href="#">Download</a>
-        <a href="#">Project</a>
-        <a href="#">links</a>
-        <a href="#">Donate</a>
         <a href="faqs.htm" class="active">FAQ</a>
     </nav>
 
+    <!-- add support for phones -->
+    <div class="nav-phone">
+        <div><img src="./img/menu.png" alt="menu" onclick="show_hide('sidemenu')"></div>
+        <!-- <div>Obsidian OS</div> -->
+    </div>
+    <div class="menu" id="sidemenu">
+        <ul>
+            <a href="index.htm"><li>Home</li></a>
+            <a href="faqs.htm"><li class="active">FAQ</li></a>  
+        </ul>
+    </div>
+
+    <!-- main page -->
     <div class="title">
         <img src="./img/faqslogo.png" alt="obsidian os logo">
         <h1>FAQs</h1>
@@ -138,10 +147,6 @@
         <p>Navigate:</p>
             <ul>
                 <li><a href="index.htm">Home</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">links</a></li>
-                <li><a href="#">Donate</a></li>
                 <li><a href="faqs.htm">FAQ</a></li>
             </ul>
         </div> 
@@ -155,6 +160,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

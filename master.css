@@ -7,9 +7,13 @@ body{
     background-color: black;
 }
 
+.nav-phone, .menu{
+    display: none;
+}
+
 
 /* navbar */
-nav{
+nav, .nav-phone{
     background-color: #480177;
     opacity: 0.9;
     /* filter: blur(5px); */
@@ -125,7 +129,7 @@ footer div{
 }
 
 footer img{
-    width: 10%;
+    width: 25%;
     margin: 0px;
 }
 
@@ -165,4 +169,90 @@ footer a:hover{
     padding: 5px;
     font-family: "cairo", sans-serif;
     font-size: 18px;
+}
+
+@media screen and (max-width:720px){
+    .nav-phone{
+        display: flex;
+        height: 55px;
+        padding: 0;
+    }
+    .nav-phone div{
+        font-family: "cairo", sans-serif;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        padding: 5px;
+    }
+
+    .nav-phone p{
+        width: 50%;
+    }
+
+    .menu{
+        display: none;
+        /* opacity: 0; */
+        background-color: rgb(76, 2, 124, 0.98);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 2;
+        padding: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul{
+        list-style-type: none;
+    }
+
+    .menu li{
+        color: white;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .menu ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu a{
+        text-decoration: none;        
+    }
+    .menu li:hover{
+        background-color: #8d00eb;
+    }
+    .menu li.active{
+        background-color: #ad4af0;
+    }
+    
+    .menu li.active:hover{
+        background-color: #8d00eb;
+    }
+    
+    .nav-phone img{
+        width: 50px;
+    }
+    nav{
+        display: none;
+    }
+
+    .about div{
+        display: block;
+        width: 100%;
+    }
+
+    footer{
+        display: block;
+    }
+    footer img{
+        width: 40%;
+    }
+    footer div{
+        width: 100%;
+    }
 }
