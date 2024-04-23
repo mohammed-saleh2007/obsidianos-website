@@ -39,7 +39,7 @@ function send_fourm(){
     
     // Constructing the message
     var message = "%0D%0AName:" + name.replace(/\s/g, "%20");
-    message += "%0D%0AEmail:" + email.replace(/\s/g, "%20");
+    message += "%0D%0AEmail-Phone-Whatsapo:" + email.replace(/\s/g, "%20");
     message += "%0D%0ADiscord:" + discord.replace(/\s/g, "%20");
     message += "%0D%0AOperating%20Systems:" + (osWindows ? "Windows" : "") + (osLinux ? "-Linux" : "") + (osMacOS ? "-MacOS" : "");
     message += "%0D%0ALinux%20Distro:" + distro.replace(/\s/g, "%20");
