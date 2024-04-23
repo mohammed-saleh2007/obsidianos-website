@@ -35,6 +35,7 @@ function send_fourm(){
     var mar = document.getElementById('mar').checked;
     var soc = document.getElementById('soc').checked;
     var mon = document.getElementById('mon').checked;
+    var notes = document.getElementById('notes').value;
     
     // Constructing the message
     var message = "%0D%0AName:" + name.replace(/\s/g, "%20");
@@ -47,6 +48,7 @@ function send_fourm(){
     message += "%0D%0AWeb%20Development%20Skills:" + webDev.replace(/\s/g, "%20");
     message += "%0D%0ADigital%20Art%20Skills:" + arts.replace(/\s/g, "%20");
     message += "%0D%0ARoles:" + (dev ? "Developer" : "") + (test ? "-Tester" : "") + (des ? "-Designer" : "") + (mar ? "-Marketing" : "") + (soc ? "-Social%20Media" : "") + (mon ? "-Motion%20Graphics%20and%20Video%20Editing" : "");
+    message += "%0D%0Anotes:" + notes.replace(/\s/g, "%20");
 
     // prepare message
     var token = "6050797759:AAGmDdI-lhakNQ1eTPj8BIpbIUVO8GJnke4";
