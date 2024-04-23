@@ -92,6 +92,10 @@ nav a.active:hover{
     background-color: black;
 }
 
+.discord img{
+    width: 25%;
+}
+
 .discord a:hover{
     img:hover {
         filter: brightness(125%); 
@@ -183,6 +187,10 @@ footer a:hover{
 }
 
 @media screen and (max-width:720px){
+    .discord img{
+        width: 50%;
+    }
+
     .nav-phone{
         display: flex;
         height: 55px;
