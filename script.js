@@ -14,3 +14,77 @@ function show_hide(item){
         //  }
     }
 }
+
+function send_fourm(){
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var discord = document.getElementById('discord').value;
+    var osWindows = document.getElementById('windows').checked;
+    var osLinux = document.getElementById('Linux').checked;
+    var osMacOS = document.getElementById('MacOS').checked;
+    var distro = document.getElementById('distro').value;
+    var pythonYes = document.getElementById('pycheckyes').checked;
+    var pythonNo = document.getElementById('pychechno').checked;
+    var qtYes = document.getElementById('qtcheckyes').checked;
+    var qtNo = document.getElementById('qtcheckno').checked;
+    var webDev = document.getElementById('webdev').value;
+    var arts = document.getElementById('arts').value;
+    var dev = document.getElementById('dev').checked;
+    var test = document.getElementById('test').checked;
+    var des = document.getElementById('des').checked;
+    var mar = document.getElementById('mar').checked;
+    var soc = document.getElementById('soc').checked;
+    var mon = document.getElementById('mon').checked;
+    
+
+
+
+
+
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Discord:", discord);
+    console.log("Operating Systems:");
+    console.log("Windows:", osWindows);
+    console.log("Linux:", osLinux);
+    console.log("MacOS:", osMacOS);
+    console.log("Linux Distro:", distro);
+    console.log("Python Programmer:", pythonYes ? "Yes" : "No");
+    console.log("Python Programmer - Familiar with Qt:", qtYes ? "Yes" : "No");
+    console.log("Web Development Skills:", webDev);
+    console.log("Digital Art Skills:", arts);
+    console.log("Roles:");
+    console.log("Developer:", dev);
+    console.log("Tester:", test);
+    console.log("Designer:", des);
+    console.log("Marketing:", mar);
+    console.log("Social Media:", soc);
+    console.log("Motion Graphics and Video Editing:", mon);
+
+    // Constructing the message
+    var message = "%0D%0AName:" + name.replace(/\s/g, "%20");
+    message += "%0D%0AEmail:" + email.replace(/\s/g, "%20");
+    message += "%0D%0ADiscord:" + discord.replace(/\s/g, "%20");
+    message += "%0D%0AOperating%20Systems:" + (osWindows ? "Windows" : "") + (osLinux ? "-Linux" : "") + (osMacOS ? "-MacOS" : "");
+    message += "%0D%0ALinux%20Distro:" + distro.replace(/\s/g, "%20");
+    message += "%0D%0APython%20Programmer:" + (pythonYes ? "Yes" : "No");
+    message += "%0D%0APython%20Programmer%20-%20Familiar%20with%20Qt:" + (qtYes ? "Yes" : "No");
+    message += "%0D%0AWeb%20Development%20Skills:" + webDev.replace(/\s/g, "%20");
+    message += "%0D%0ADigital%20Art%20Skills:" + arts.replace(/\s/g, "%20");
+    message += "%0D%0ARoles:" + (dev ? "Developer" : "") + (test ? "-Tester" : "") + (des ? "-Designer" : "") + (mar ? "-Marketing" : "") + (soc ? "-Social%20Media" : "") + (mon ? "-Motion%20Graphics%20and%20Video%20Editing" : "");
+
+    // Output the message to console
+    console.log(message);
+
+    // prepare message
+    var token = "6050797759:AAGmDdI-lhakNQ1eTPj8BIpbIUVO8GJnke4";
+    var chat_id = 1866453320;
+    var url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&text=' + message + '&parse_mode=html';
+    console.log(url);
+
+    // send message 
+    var oReq = new XMLHttpRequest();
+    oReq.open("GET", url, true);
+    oReq.send();;
+
+    }

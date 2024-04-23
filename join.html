@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>ObsidianOS - Home Page</title>
+
+    <!-- METADATA -->
+    <meta name="title" content="ObsidianOS">
+    <meta name="image" content="https://mohammed-saleh2007.github.io/obsidianos-website/img/logo">
+
+    <!-- import needed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,377&family=Pixelify+Sans:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <nav>
+        <a href="index.htm" class="active">Home</a>
+        <a href="faqs.htm">FAQ</a>
+        <a href="join.html">Join Us!</a>
+    </nav>
+
+    <!-- add support for phones -->
+    <div class="nav-phone">
+        <div><img src="./img/menu.png" alt="menu" onclick="show_hide('sidemenu')"></div>
+        <!-- <div>Obsidian OS</div> -->
+    </div>
+    <div class="menu" id="sidemenu">
+        <ul>
+            <a href="index.htm"><li class="active">Home</li></a>
+            <a href="faqs.htm"><li>FAQ</li></a>  
+        </ul>
+    </div>
+
+    <!-- we go here -->
+    <div class="title">
+        <img src="./img/Joinus.png" alt="obsidian os logo">
+        <p>You can regeste and join us as developer, tester and more<p>
+        <h2>Fill the form below</h2>
+    </div>
+
+    <br><br><br>
+
+    <div class="fourm">
+        <label for="name">Your name*</label>
+        <input type="text" name="name" id="name">
+
+        <br>
+
+        <label for="email">Your Email*</label>
+        <input type="email" name="email" id="email">
+
+        <br>
+
+        <label for="discord">Your Discord</label>
+        <input type="text" name="discord" id="discord">
+
+        <br>
+
+        <p> What operating systems have you previously used?<p>
+        <input type="checkbox" class="os" id="windows"> Windows<br>
+        <input type="checkbox" class="os" id="Linux"> Linux<br>
+        <input type="checkbox" class="os" id="MacOS"> MacOS<br>
+
+        <br>
+
+        <p>If you a Linux user, Which distros have you used ?</p>
+        <input type="text" name="distro" id="distro">
+
+        <br>
+
+        <p>Are you a python programmer ?<p>
+        <input type="radio" value="1" name="pythoncheck" id="pycheckyes"> Yes<br>
+        <input type="radio" value="0" name="pythoncheck" id="pychechno"> No
+
+        <br>
+
+        <label for="python">If you are a Python programmer, have you dealt with Qt before?</label><br>
+        <input type="radio" value="1" name="qtcheck" id="qtcheckyes"> Yes<br>
+        <input type="radio" value="0" name="qtcheck" id="qtcheckno"> No
+
+        <p>If you have any web development skills tell us here.</p>
+        <input type="text" name="webdev" id="webdev">
+        
+        <p>If you have any Digital Art skills tell us here.</p>
+        <input type="text" name="arts" id="arts">
+
+        <p>How can you help us?<p>
+        <input type="checkbox" class="rule" id="dev"> Developer<br>
+        <input type="checkbox" class="rule" id="test"> Tester<br>
+        <input type="checkbox" class="rule" id="des"> Designer<br>
+        <input type="checkbox" class="rule" id="mar"> Marketing<br>
+        <input type="checkbox" class="rule" id="soc"> Social Media<br>
+        <input type="checkbox" class="rule" id="mon"> Motion Graphics and Video Editing<br>
+        
+        <input type="submit" value="Submit Form Now!" onclick="send_fourm()">
+    </div>
+
+    <br><br><br>
+    
+    <footer>
+        <div class="footer-logo">
+            <img src="./img/logo.png" alt="logo">
+            <p>Obsidian OS<p>
+        </div>
+        <div class="footer-nav">
+        <p>Navigate:</p>
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="faqs.htm">FAQ</a></li>
+                <li><a href="join.html">Join Us!</a></li>
+            </ul>
+        </div> 
+        <div class="footer-follow">
+            <p>Follow Us:</p>
+            <ul>
+                <li><a href="https://discord.com/invite/zuBAjNuV">Discord</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61555372363814 ">Facebook</a></li>
+                <li><a href="https://www.youtube.com/ObsidianDT">Youtube</a></li>
+                <li><a href="https://twitter.com/ObsidianDT">X</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

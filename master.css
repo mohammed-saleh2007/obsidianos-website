@@ -186,6 +186,10 @@ footer a:hover{
     font-size: 18px;
 }
 
+.fourm input{
+    color: black;
+}
+
 @media screen and (max-width:720px){
     .discord img{
         width: 50%;
