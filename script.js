@@ -54,11 +54,14 @@ function send_fourm(){
     var url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&text=' + message + '&parse_mode=html';
 
     // send message 
-    var oReq = new XMLHttpRequest();
-    oReq.open("GET", url, true);
-    oReq.send();;
-
-    document.getElementById("submit").style.display = "none"
-    alert("Sent sucessfully!\nwait for respond in your email")
+    try{
+        var oReq = new XMLHttpRequest();
+        oReq.open("GET", url, true);
+        oReq.send();;
+        document.getElementById("submit").style.display = "none"
+        alert("Sent sucessfully!\nwait for respond in your email")
+    }catch{
+        alert("there is an error happend!\ntell us on discord.")
+    }
 
     }
