@@ -36,31 +36,6 @@ function send_fourm(){
     var soc = document.getElementById('soc').checked;
     var mon = document.getElementById('mon').checked;
     
-
-
-
-
-
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Discord:", discord);
-    console.log("Operating Systems:");
-    console.log("Windows:", osWindows);
-    console.log("Linux:", osLinux);
-    console.log("MacOS:", osMacOS);
-    console.log("Linux Distro:", distro);
-    console.log("Python Programmer:", pythonYes ? "Yes" : "No");
-    console.log("Python Programmer - Familiar with Qt:", qtYes ? "Yes" : "No");
-    console.log("Web Development Skills:", webDev);
-    console.log("Digital Art Skills:", arts);
-    console.log("Roles:");
-    console.log("Developer:", dev);
-    console.log("Tester:", test);
-    console.log("Designer:", des);
-    console.log("Marketing:", mar);
-    console.log("Social Media:", soc);
-    console.log("Motion Graphics and Video Editing:", mon);
-
     // Constructing the message
     var message = "%0D%0AName:" + name.replace(/\s/g, "%20");
     message += "%0D%0AEmail:" + email.replace(/\s/g, "%20");
@@ -73,18 +48,17 @@ function send_fourm(){
     message += "%0D%0ADigital%20Art%20Skills:" + arts.replace(/\s/g, "%20");
     message += "%0D%0ARoles:" + (dev ? "Developer" : "") + (test ? "-Tester" : "") + (des ? "-Designer" : "") + (mar ? "-Marketing" : "") + (soc ? "-Social%20Media" : "") + (mon ? "-Motion%20Graphics%20and%20Video%20Editing" : "");
 
-    // Output the message to console
-    console.log(message);
-
     // prepare message
     var token = "6050797759:AAGmDdI-lhakNQ1eTPj8BIpbIUVO8GJnke4";
     var chat_id = 1866453320;
     var url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&text=' + message + '&parse_mode=html';
-    console.log(url);
 
     // send message 
     var oReq = new XMLHttpRequest();
     oReq.open("GET", url, true);
     oReq.send();;
+
+    document.getElementById("submit").style.display = "none"
+    alert("Sent sucessfully!\nwait for respond in your email")
 
     }
