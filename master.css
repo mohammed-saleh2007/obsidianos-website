@@ -88,6 +88,17 @@ nav a.active:hover{
     background-color: #8d00eb;
 }
 
+.discord a{
+    background-color: black;
+}
+
+.discord a:hover{
+    img:hover {
+        filter: brightness(125%); 
+    }
+    background-color: black;
+}
+
 .about{
     display: flex;
     padding: 15px;
